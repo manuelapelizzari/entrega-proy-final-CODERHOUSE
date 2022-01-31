@@ -1,0 +1,192 @@
+@import "_mixins";
+@import "_fuente";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+$ancho-fijo: 100%;
+header{
+    background-color: rgb(100, 100, 100);
+    .logo__tamaño{
+        max-width: 5%;
+        animation: swing;
+        animation-duration: 1s;}
+    .nav-item{
+        font-family: 'Roboto Slab';
+        font-size: 75%;}
+    .navbar-light .navbar-nav .nav-link{
+        color: white;}
+    .navbar-light .navbar-nav .nav-link:hover{
+        color: yellow;}
+    .navbar-collapse {
+        flex-grow: 0 !important;}
+    }    
+main{
+    background-color: rgb(61, 61, 61);
+    .carousel-caption{
+        display: flex !important;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        max-width: 75%;}
+    .nosotros__padre{
+        font-family: $tipografia;
+        background-color: rgb(61, 61, 61);
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .nosotros__padre h4{
+        color: rgb(253, 255, 109);}
+    .nosotros__padre hr{
+        color: rgb(216, 215, 215);
+    }
+    .nosotros__hijos{
+    color: rgb(253, 255, 109);
+    margin-top: 5vh;
+    margin-bottom: 10.5vh;}
+    .nosotros__hijos button{
+        margin-top: 5vh;}
+}
+section{
+    font-family: $tipografia;
+    background-color: rgb(66, 66, 66);
+    .seccion1{
+        p{
+            @include basempb ($p:5vh);
+            color: white;}
+        &__img{
+            max-width: 20%;
+            @include basempb($p: 5%)
+            }
+        }
+}
+article{
+    font-family: $tipografia;
+    background-color: rgba(255, 255, 0, 0.712);
+    .seccion2 {
+        display: flex; 
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        @include basempb($p: 30px);
+        max-width: $ancho-fijo;}
+    .seccion2__cajas{
+        max-width: 100%;
+        text-align: center;}
+    .seccion2__cajas span{
+        font-size: 48px;
+        line-height: 48px;
+        display: block;
+        font-weight: 700;
+        color: rgb(66, 66, 66);
+        margin-left: 80px;
+        margin: auto;}
+    .seccion2__cajas p{
+        padding: 8px 0 0 0;
+        font-weight: 600;
+        font-size: 14px;
+        color: rgb(104, 104, 104);}
+    }
+.ediciones2{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    max-width: $ancho-fijo;}
+.icon-success{
+    color: yellow;}  
+.contacto__padre{
+        background-color: rgb(61, 61, 61);
+        color: rgb(253, 255, 109);
+    h5{
+        padding-top: 2.5vh;}
+    button{
+        background-color: grey;
+        color: black;}
+    p{
+        color: white;}
+    button:hover{
+        background-color: grey;
+        color: rgb(253, 255, 109);}
+    form{
+        padding-bottom: 2.5vh;}
+}
+.mapa__padre{
+    color: rgb(253, 255, 109);
+    background-color:rgb(61, 61, 61);
+    h5{
+        padding-top: 2.5vh;}
+    iframe{
+        padding-bottom: 2vh;}
+}
+.recursos__padre{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: rgb(253, 255, 109);
+    background-color:black;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+}
+.recursos__ediciones a{
+    text-decoration: none;
+    color: white;}
+.recursos__ediciones a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+.servicios__padre{
+    @include basempb($p: 10vh);
+    color: rgb(253, 255, 109);
+    background-color:rgb(61, 61, 61);
+    img{
+        padding-bottom: 2vh;
+        max-width: 20%;}
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;}
+    h2{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        color: white;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    color: white;}
+}
+.proyectos__padre{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    h4{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;}
+    img{
+    max-width: 100%;}
+}
+@media screen and (max-width: 600px){
+    .servicios__padre{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+    
+    

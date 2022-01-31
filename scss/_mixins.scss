@@ -1,0 +1,5 @@
+@mixin basempb ($m:0, $p:0, $b:0, $ba:border, $ma:margin, $pa:padding,){
+    #{$ma}:$m;
+    #{$pa}:$p;
+    #{$b}:$b;
+}

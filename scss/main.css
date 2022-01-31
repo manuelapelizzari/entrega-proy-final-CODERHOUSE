@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #646464;
+}
+header .logo__tamaño {
+  max-width: 5%;
+  -webkit-animation: swing;
+          animation: swing;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+header .nav-item {
+  font-family: "Roboto Slab";
+  font-size: 75%;
+}
+header .navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: yellow;
+}
+header .navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+main {
+  background-color: #3d3d3d;
+}
+main .carousel-caption {
+  display: flex !important;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  max-width: 75%;
+}
+main .nosotros__padre {
+  font-family: "Roboto slab", serif;
+  background-color: #3d3d3d;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+main .nosotros__padre h4 {
+  color: #fdff6d;
+}
+main .nosotros__padre hr {
+  color: #d8d7d7;
+}
+main .nosotros__hijos {
+  color: #fdff6d;
+  margin-top: 5vh;
+  margin-bottom: 10.5vh;
+}
+main .nosotros__hijos button {
+  margin-top: 5vh;
+}
+
+section {
+  font-family: "Roboto slab", serif;
+  background-color: #424242;
+}
+section .seccion1 p {
+  margin: 0;
+  padding: 5vh;
+  0: 0;
+  color: white;
+}
+section .seccion1__img {
+  max-width: 20%;
+  margin: 0;
+  padding: 5%;
+  0: 0;
+}
+
+article {
+  font-family: "Roboto slab", serif;
+  background-color: rgba(255, 255, 0, 0.712);
+}
+article .seccion2 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 30px;
+  0: 0;
+  max-width: 100%;
+}
+article .seccion2__cajas {
+  max-width: 100%;
+  text-align: center;
+}
+article .seccion2__cajas span {
+  font-size: 48px;
+  line-height: 48px;
+  display: block;
+  font-weight: 700;
+  color: #424242;
+  margin-left: 80px;
+  margin: auto;
+}
+article .seccion2__cajas p {
+  padding: 8px 0 0 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #686868;
+}
+
+.ediciones2 {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.icon-success {
+  color: yellow;
+}
+
+.contacto__padre {
+  background-color: #3d3d3d;
+  color: #fdff6d;
+}
+.contacto__padre h5 {
+  padding-top: 2.5vh;
+}
+.contacto__padre button {
+  background-color: grey;
+  color: black;
+}
+.contacto__padre p {
+  color: white;
+}
+.contacto__padre button:hover {
+  background-color: grey;
+  color: #fdff6d;
+}
+.contacto__padre form {
+  padding-bottom: 2.5vh;
+}
+
+.mapa__padre {
+  color: #fdff6d;
+  background-color: #3d3d3d;
+}
+.mapa__padre h5 {
+  padding-top: 2.5vh;
+}
+.mapa__padre iframe {
+  padding-bottom: 2vh;
+}
+
+.recursos__padre {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: #fdff6d;
+  background-color: black;
+}
+.recursos__padre div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recursos__ediciones a {
+  text-decoration: none;
+  color: white;
+}
+
+.recursos__ediciones a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.servicios__padre {
+  margin: 0;
+  padding: 10vh;
+  0: 0;
+  color: #fdff6d;
+  background-color: #3d3d3d;
+}
+.servicios__padre img {
+  padding-bottom: 2vh;
+  max-width: 20%;
+}
+.servicios__padre p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.servicios__padre h2 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+}
+.servicios__padre h3 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+}
+
+.proyectos__padre {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.proyectos__padre h4 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.proyectos__padre img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .servicios__padre {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
